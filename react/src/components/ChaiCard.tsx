@@ -1,6 +1,6 @@
 interface ChaiCardProp {
   name: string;
-  price: string;
+  price: number;
   isSpecial?: boolean;
 }
 

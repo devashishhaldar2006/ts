@@ -1,7 +1,22 @@
 import "./App.css";
 import { ChaiCard } from "./components/ChaiCard";
+import { ChaiList } from "./components/ChaiList";
 import { Counter } from "./components/Counter";
+import type {Chai} from "./types";
 
+
+const menu: Chai[] = [
+  {
+    id: 1,
+    name: "masala",
+    price: 100,
+  },
+  {
+    id: 2,
+    name: "chai",
+    price: 200,
+  },
+];
 function App() {
   return (
     <>
@@ -11,6 +26,9 @@ function App() {
       </div>
       <div>
         <Counter/>
+      </div>
+      <div>
+        <ChaiList items={menu} />
       </div>
     </>
   );
